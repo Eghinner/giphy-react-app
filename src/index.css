@@ -1,14 +1,61 @@
 /*Common center css*/
 * { box-sizing: border-box;margin: 0;padding: 0; }
 
-html, body {
+/*html, body {
 	height: 100%;
-}
+}*/
 
 body {
 	font-family: sans-serif;
 	background-color: grey;
+}
+
+nav {
+	text-align: center;
+	font-weight: bold;
+	font-size: 40px;
+	position: relative;
+}
+a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+form {
+	width: 100%;
+	/*margin: auto;*/
+	/*justify-content: center;*/
+	text-align: center;
+}
+
+input {
+	padding: 1rem;
+	border-radius: 5px;
+	outline: none;
+	border: hidden;
+	margin: 1rem;
+}
+
+input:active,input:focus{
+	outline: solid blue;
+	/*border: red 1px solid;*/
+}
+
+.links {
+	text-align: center;
+}
+
+.container {
+	max-width: 988px;
+	min-width: 300px;
+	width: 100%;
 	display: flex;
-	justify-content: center;
+	flex-wrap: wrap;
+	gap: 20px;
+	align-items: stretch;
+	justify-content: space-around;
 	align-items: center;
+	margin: auto;
 }

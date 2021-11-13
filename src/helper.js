@@ -1,6 +1,6 @@
 
 export function stickers(query) {
-	const urlapi = `https://api.giphy.com/v1/stickers/search?api_key=9BXMR8MNgSyytpSBCQkO38ap3VIFQWR0&q=${query}&limit=3&offset=0&rating=g&lang=en`;
+	const urlapi = `https://api.giphy.com/v1/gifs/search?api_key=9BXMR8MNgSyytpSBCQkO38ap3VIFQWR0&q=${query}&limit=10&offset=0&rating=g&lang=en`;
 	return fetch(urlapi)
 	.then(res=>res.json())
 	.then(res=>{
